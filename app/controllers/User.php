@@ -1,13 +1,22 @@
 <?php
 
-class User
+class User extends Controller
 {
     public function index()
     {
-        echo 'User/index';
+        $data['judul'] = 'User';
+        $this->view('templates/header', $data);
+        $this->view('user/index', $data);
+        $this->view('templates/footer');
     }
-    public function profile($nama = "Andre", $pekerjaan = "Siswa")
+    public function profile($nama = 'Andre', $pekerjaan = 'Siswa')
     {
-        echo "Salam kenal saya $nama, saya seorang $pekerjaan";
+        $data['judul'] = 'profile';
+        $data['judul'] = 'User';
+        $data['nama'] = $nama;
+        $data['pekerjaan'] = $pekerjaan;
+        $this->view('templates/header', $data);
+        $this->view('user/profile', $data);
+        $this->view('templates/footer');
     }
 }
