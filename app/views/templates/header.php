@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--  Start of Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid ">
-      <a class="navbar-brand ms-5 fs-5 mt-1 mb-1" href="#">Unknown</a>
+    <div class="container">
+      <a class="navbar-brand mt-1 mb-1" href="#">Unknown</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,8 +21,12 @@
             <a class="nav-link" href="<?= BASE_URL ?> /user">User</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="<?= BASE_URL ?> /blog">Blog</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="<?= BASE_URL ?> /user/profile">Profile</a>
           </li>
+          
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
